@@ -60,8 +60,8 @@ open class Menus() : AbstractMenu(){
                         var myPrice = readln().toInt()
                         myPrice -= allMenus[Number - 1].Price
                         var balance = allMenus[Number - 1].Price
-                        var localDateTime: String? = LocalDateTime.now()
-                            .format(DateTimeFormatter.ofPattern("MMM dd yyyy, hh:mm:ss a"))
+                        var localDateTime: String? =
+                            LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMM dd yyyy, hh:mm:ss a"))
 
                         if (myPrice >= Price) {
                             println("\u001B[32m[ Change ]\u001B[0m 거스름돈은 ${myPrice}원 입니다. 감사합니다")
