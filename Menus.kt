@@ -4,12 +4,8 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.system.exitProcess
 
-open class Menus() : AbstractMenu() {
-    override fun choose(allMenus: ArrayList<AbstractMenu>): Int {
-        var menu = Menus()
-        return menu.extracted(allMenus)
-    }
-
+open class Menus() {
+   
     fun extracted(allMenus: ArrayList<AbstractMenu>): Int {
         while (true) {
             try {
