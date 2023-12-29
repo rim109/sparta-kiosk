@@ -4,12 +4,13 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.system.exitProcess
 
-open class Menus() : AbstractMenu(){
+open class Menus() : AbstractMenu() {
     override fun choose(allMenus: ArrayList<AbstractMenu>): Int {
         var menu = Menus()
         return menu.extracted(allMenus)
     }
-// choose을 호출하는 부분이 없고 9~10번까진 흐름이 되진 않지만 이걸 지울 시에 bagList 부분이 호출이 되지 않아서 다시 넣어주었다.. 이번은 이렇게 하되 다른 방법을 고안해봐야겠다.
+
+    // choose을 호출하는 부분이 없고 9~10번까진 흐름이 되진 않지만 이걸 지울 시에 bagList 부분이 호출이 되지 않아서 다시 넣어주었다.. 이번은 이렇게 하되 다른 방법을 고안해봐야겠다.
 // 코드 포맷 꾸준히 하기    
     fun extracted(allMenus: ArrayList<AbstractMenu>): Int {
         while (true) {
